@@ -4,7 +4,8 @@
   --font-semi: 600;
   --hue-color: 224;
   --first-color: orange;
-  --second-color: hsl(var(--hue-color), 55%, 12%);
+  --second-color:#cececc;
+  --back-color:#171819;
   --body-font: "Poppins", sans-serif;
   --big-font-size: 2rem;
   --h2-font-size: 1.25rem;
@@ -34,6 +35,7 @@
 ::after {
   box-sizing: border-box;
 }
+
 
 html {
   scroll-behavior: smooth;
@@ -92,6 +94,7 @@ img {
 .section {
   padding-top: 3rem;
   padding-bottom: 2rem;
+    
 }
 
 .bd-grid {
@@ -107,7 +110,7 @@ img {
   top: 0;
   left: 0;
   z-index: var(--z-fixed);
-  background-color: #fff;
+  background-color: var(--back-color);
   box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15);
 }
 
@@ -180,10 +183,16 @@ img {
 }
 
 .home {
+  height: 100vh;
   position: relative;
   row-gap: 5rem;
   padding: 4rem 0 5rem;
+  
 }
+.l-main{
+  background-color: rgb(37, 37, 37);
+}
+
 
 .home__data {
   align-self: center;
@@ -249,7 +258,8 @@ img {
 }
 
 .about {
-  background-color: aliceblue;
+  
+  background-color: var(--back-color);
 }
 .about__subtitle {
   margin-bottom: var(--mb-2);
@@ -270,7 +280,7 @@ img {
 }
 
 .skills {
-  background-color: aliceblue;
+  background-color: var(--back-color);
 }
 
 .skills__subtitle {
@@ -347,7 +357,8 @@ img {
 }
 
 .contact {
-  background-color: aliceblue;
+  
+  background-color: var(--back-color);
 }
 .contact__button {
   display: block;
